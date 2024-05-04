@@ -235,7 +235,7 @@ int cospike_cosim(long long int cycle,
     }
     COSPIKE_PRINTF("\n");
 
-    std::vector<device_factory_t*> plugin_device_factories;
+    const std::vector<device_factory_sargs_t> plugin_device_factories;
     sim = new sim_t(cfg, false,
                     mems,
                     plugin_device_factories,
